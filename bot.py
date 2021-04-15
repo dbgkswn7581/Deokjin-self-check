@@ -892,7 +892,7 @@ async def check(ctx):
             # 학교 이름 선택 버튼
             schname = driver.find_element_by_xpath('//*[@id="orgname"]') 
             schname.click()
-            schname.send_keys("전라고등학교")
+            schname.send_keys("덕진중학교")
             schname.send_keys(Keys.RETURN)
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
@@ -1165,7 +1165,7 @@ async def check(ctx):
             # 학교 이름 선택 버튼
             schname = driver.find_element_by_xpath('//*[@id="orgname"]') 
             schname.click()
-            schname.send_keys("전라고등학교")
+            schname.send_keys("덕진중학교")
             schname.send_keys(Keys.RETURN)
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
