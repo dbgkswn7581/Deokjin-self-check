@@ -874,17 +874,19 @@ async def check(ctx):
             description = "#학교급 선택 버튼", color = discord.Color.red()
             )
             await ctx.send(embed=embed)
-            await ctx.send(ex)
+            # await ctx.send(ex)
 
         try:
             #고등학교 버튼
-            driver.find_element_by_xpath('//*[@id="crseScCode"]/option[5]').click()
+            # driver.find_element_by_xpath('//*[@id="crseScCode"]/option[5]').click()
+            driver.find_element_by_xpath('//*[@id="crseScCode"]/option[4]').click()
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
-            description = "#고등학교 버튼", color = discord.Color.red()
+            # description = "#고등학교 버튼", color = discord.Color.red()
+            description = "#중학교 버튼", color = discord.Color.red()
             )
             await ctx.send(embed=embed)
-            await ctx.send(ex)
+            # await ctx.send(ex)
 
         try:
             # 학교 이름 선택 버튼
@@ -1145,17 +1147,19 @@ async def check(ctx):
             description = "#학교급 선택 버튼", color = discord.Color.red()
             )
             await ctx.send(embed=embed)
-            await ctx.send(ex)
+            # await ctx.send(ex)
 
         try:
             #고등학교 버튼
-            driver.find_element_by_xpath('//*[@id="crseScCode"]/option[5]').click()
+            # driver.find_element_by_xpath('//*[@id="crseScCode"]/option[5]').click()
+            driver.find_element_by_xpath('//*[@id="crseScCode"]/option[4]').click()
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
-            description = "#고등학교 버튼", color = discord.Color.red()
+            # description = "#고등학교 버튼", color = discord.Color.red()
+            description = "#중학교 버튼", color = discord.Color.red()
             )
             await ctx.send(embed=embed)
-            await ctx.send(ex)
+            # await ctx.send(ex)
 
         try:
             # 학교 이름 선택 버튼
