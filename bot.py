@@ -905,7 +905,7 @@ async def check(ctx):
 
         try:
             #학교 선택
-            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/span').click()
+            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/p/a').click()
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
             description = "#학교 선택", color = discord.Color.red()
@@ -1178,7 +1178,7 @@ async def check(ctx):
 
         try:
             #학교 선택
-            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/span').click()
+            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/p/a').click()
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
             description = "#학교 선택", color = discord.Color.red()
@@ -1452,13 +1452,13 @@ async def check(ctx):
 
         try:
             #학교 선택
-            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/span').click()
+            driver.find_element_by_xpath('//*[@id="softBoardListLayer"]/div[2]/div[1]/ul/li/a/p/a').click()
         except Exception as ex:
             embed = discord.Embed(title = "Failed",
             description = "#학교 선택", color = discord.Color.red()
             )
             await ctx.send(embed=embed)
-            # await ctx.send(ex)
+            await ctx.send(ex)
 
         try:
             #학교선택 버튼 클릭
