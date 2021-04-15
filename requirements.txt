@@ -1,0 +1,5 @@
+discord.py
+BeautifulSoup4
+asyncio
+selenium
+psycopg2
